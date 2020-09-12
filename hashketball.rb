@@ -129,7 +129,7 @@ end
 
 # Write code here
 def num_points_scored(p1)
-  game_hash.each do |home_away, entire_team|
+  game_hash.each do |key, entire_team|
     binding.pry
     entire_team[:players].each do |player_hash|
       if player_hash[:player_name] == p1
